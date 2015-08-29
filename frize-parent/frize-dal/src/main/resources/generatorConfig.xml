@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!-- 本地仓库 -->
+	<classPathEntry location="G:\maven\.m2\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar" />
+	<context id="MySqlTables" targetRuntime="MyBatis3" >
+		<property name="javaFileEncoding" value="UTF-8"/>
+		
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1/frize" userId="root" password="root"/>
+		
+    	<!-- model的配置  -->
+		<javaModelGenerator targetPackage="com.fhqinui.frize.common.entity.sys" targetProject="frize-common\src\main\java"/>
+		
+		<!--mybatis的xml的配置  -->
+		<sqlMapGenerator targetPackage="mybatis.mapper.sys" targetProject="frize-dal\src\main\resources" >
+			<property name="enableSubPackages" value="true"/>
+		</sqlMapGenerator>
+		
+		<!--mapper的配置  -->
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.fhqinui.frize.dal.mybatis.mapper.sys" targetProject="frize-dal\src\main\java">
+			<property name="enableSubPackages" value="true"/>
+		</javaClientGenerator>
+		
+		<!-- 需要生成的表(通过generatedKey指定返回的主键) -->
+		<table tableName="t_sys_menu_" domainObjectName="SysMenu">
+		</table>
+
+  </context> 
+</generatorConfiguration>

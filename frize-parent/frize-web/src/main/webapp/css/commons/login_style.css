@@ -1,0 +1,607 @@
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+    font-size: 12px;
+    line-height: 166.6%;
+    text-align: center;
+}
+body, input, select, button {
+    font-family: verdana;
+}
+h1, h2, h3, select, input, button {
+    font-size: 100%;
+}
+body, h1, h2, h3, ul, li, form, p, img {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+input, button, select, img {
+    line-height: normal;
+    margin: 0;
+}
+select {
+    padding: 1px;
+}
+ul {
+    list-style: none outside none;
+}
+select, input, button, button img, label {
+    vertical-align: middle;
+}
+header, footer, section, aside, nav, hgroup, figure, figcaption {
+    border: medium none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #959595;
+    text-decoration: none;
+}
+a:hover {
+    color: #626262;
+}
+.fontWeight {
+    font-weight: 700;
+}
+.unvisi {
+    visibility: hidden;
+}
+
+body{ background:#062723 url(../../images/login/top_bodybg.png) repeat-x;}
+.top{height:80px;width:100%; background:url(../../images/login/topbg.png) repeat-x;}
+.top_cont{height:50px;width:985px; margin:auto;padding-top:15px;}
+.logo{ width:500px;float:left;}
+.logo img{ float:left;}
+.logo h1{  font-size:18px; font-family:"Microsoft Yahei"; line-height:30px;color:#FFF; text-indent:10px;height:26px; overflow:hidden; text-align:left;}
+.logo span{float:left; font-size:10px; font-family:"Microsoft Yahei"; line-height:18px;color:#46a0b9; text-indent:10px;}
+.it_tel{ float:right;width:200px; text-align:right;font-size:14px; line-height:50px; height:50px; color:#FFF;}
+.banner{height:440px;border-top:5px solid #46a0b9;border-bottom:5px solid #46a0b9;width:100%; margin:auto; overflow:hidden;background:url(../../images/login/imgloader.gif) no-repeat center center #FFF;}
+.footer{width:985px;height:70px;line-height:70px;color:#686a6c; font-size:14px; text-align:center; margin:auto;}
+
+
+.themeCtrl a, .loginFormIpt, .headerIntro, .loginIcoCurrent, .loginIcoNew, .themeText li, .domain, .whatAutologin, .btn, .dialogbox .hd .rc, .dialogbox .hd, .btn-moblogin, .btn-moblogin2, .ico, .locationTestTitle, .verSelected, .servSelected, .locationTestTitleClose, .ext-4free, #extText li, #extMobLogin li, #mobtips_arr, #mobtips_close {
+    background-image: url("../../images/login/login_iconbg.png");
+}
+.headerLogo, .headerIntro, .headerNav, #headerEff, .footerLogo, .footerNav, .loginIcoCurrent, .loginIcoNew, .loginFormTh, .loginFormTdIpt, .domain, #whatAutologinTip, #mobtips, #mobtips_arr, #mobtips_close {
+    position: absolute;
+}
+.ico-uid {
+    background-position: -169px -64px;
+    height: 16px;
+    width: 14px;
+}
+.ico-pwd {
+    background-position: -193px -64px;
+    height: 16px;
+    width: 14px;
+}
+.ico-arr {
+    background-position: -160px -112px;
+    display: inline-block;
+    height: 12px;
+    vertical-align: baseline;
+    width: 7px;
+}
+.ico-arr-d {
+    background-position: -160px -110px;
+}
+.loginFormConf a:hover .ico-arr-d, .ico-arr-d-focus {
+    background-position: -176px -110px;
+}
+* + html .ico-arr-d {
+    background-position: -160px -112px;
+}
+* + html .loginFormConf a:hover .ico-arr-d, * + html .loginFormConf a:hover .ico-arr-d, * + html .ico-arr-d-focus {
+    background-position: -176px -112px;
+}
+
+.login {
+	background: url("../../images/login/login_bg.png") no-repeat scroll 0 0 ;
+	height: 340px;
+	left: 57%;
+	margin-left: 90px;
+	padding: 14px 16px 15px;
+	position: absolute;
+	text-align: left;
+	top: 19%;
+	width: 295px;
+	z-index: 2;
+}
+.unishadow {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.loginFunc {
+    clear: both;
+    height: 47px;
+    overflow: hidden;
+    width: 100%;
+}
+.loginFuncNormal, .loginFuncMobile {
+    color: #626262;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    height: 100%;
+    line-height: 46px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 295px;
+}
+/*.loginFuncMobile {
+    border-right: medium none;
+    width: 147px;
+}*/
+.loginIcoCurrent {
+    display: none;
+    height: 24px;
+    left: 26px;
+    top: 9px;
+    width: 24px;
+}
+.loginIcoNew {
+    background-position: -684px 0;
+    font-size: 0;
+    height: 10px;
+    left: 135px;
+    top: 12px;
+    width: 21px;
+}
+.tab-2 {
+    background-position: -323px 0;
+}
+.tab-2 .loginFuncMobile .loginIcoCurrent, .tab-1 .loginFuncNormal .loginIcoCurrent, .tab-2 #extMobLogin, .tab-1 #extText, .tab-11 #extVerSelect, .tab-22 #extMobLogin2, .tab-2 #lfBtnReg2, .tab-1 #lfBtnReg1, .tab-2 .loginFormThMob {
+    display: block;
+}
+.tab-2 #lfVerSelect, .tab-2 #extVerSelect, .tab-22 #extMobLogin, .tab-11 #extText, .tab-2 #extText, .tab-2 #lfBtnReg, .tab-1 #lfBtnReg2, .tab-22 #lfBtnMoblogin, .tab-2 .loginFormThAcc {
+    display: none;
+}
+.loginForm {
+	height: 240px;
+	padding-top: 30px;
+	position: relative;
+}
+#login126 {
+    height: 215px;
+}
+.loginFormIpt {
+    background-position: 0 -352px;
+    border-radius: 4px;
+    clear: both;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 0 18px 25px;
+    padding-right: 5px;
+    position: relative;
+    width: 240px;
+    z-index: 2;
+}
+.loginFormIpt .ico {
+    left: 9px;
+    position: absolute;
+    top: 13px;
+    z-index: 1;
+}
+.loginFormIpt-over {
+}
+.loginFormIpt-focus {
+    box-shadow: 0 0 5px rgba(40, 195, 15, 0.5);
+}
+.loginFormIpt-focus .placeholder {
+    color: #C9C9C9;
+}
+.loginFormBtn {
+    height: 43px;
+    margin: 16px 0 0 25px;
+    position: relative;
+    width: 245px;
+}
+.loginFormTh {
+    width: 36px;
+}
+.loginFormThMob {
+    display: none;
+}
+.loginFormTdIpt {
+    background: none repeat scroll 0 0 !important;
+    border: medium none;
+    color: #92A4BF;
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: 700;
+    height: 21px;
+    ime-mode: disabled;
+    left: 28px;
+    line-height: 21px;
+    padding: 9px 0 10px;
+    top: 1px;
+    width: 205px;
+}
+.loginFormTdIpt:focus {
+    outline: 0 none;
+}
+.loginFormTdIpt-focus {
+    color: #333333;
+    font-weight: 700;
+}
+.showPlaceholder .placeholder {
+    cursor: text;
+    visibility: visible;
+}
+.placeholder {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #C9C9C9;
+    font-size: 14px;
+    left: 30px;
+    line-height: 14px;
+    position: absolute;
+    top: 14px;
+    visibility: hidden;
+}
+.domain {
+    background-position: 0 -112px;
+    display: block;
+    height: 33px;
+    line-height: 999em;
+    overflow: hidden;
+    right: 8px;
+    top: 4px;
+    width: 80px;
+}
+#idInputTest {
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    visibility: hidden;
+}
+.loginFormCheck {
+    clear: both;
+    color: #555555;
+    height: 13px;
+    line-height: 13px;
+    margin-left: 25px;
+    position: relative;
+    width: 245px;
+    z-index: 1;
+}
+.loginFormCheckInner {
+    float: left;
+    height: 14px;
+    position: relative;
+    width: 150px;
+}
+.forgetPwdLine {
+    text-align: right;
+}
+#capsLockHint {
+    background-color: #FFFFCC;
+    border: 1px solid #D7D7D7;
+    color: #555555;
+    left: 0;
+    line-height: 12px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 42px;
+}
+#remAutoLogin {
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+}
+.ico-checkbox {
+    background-position: -40px -160px;
+    cursor: pointer;
+    display: inline-block;
+    height: 13px;
+    vertical-align: middle;
+    width: 13px;
+}
+.autoLogin-checked .ico-checkbox {
+    background-position: -40px -180px;
+}
+#remAutoLoginTxt, .forgetPwd {
+    color: #848585;
+}
+#remAutoLoginTxt:hover, .forgetPwd:hover {
+    color: #626262;
+}
+.loginFormCbx {
+    height: 13px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 13px;
+}
+.whatAutologin {
+    background-position: -112px -112px;
+    display: inline-block;
+    height: 14px;
+    line-height: 999em;
+    overflow: hidden;
+    vertical-align: top;
+    width: 14px;
+}
+#whatAutologinTip {
+    background-color: #FFFDE4;
+    border: 1px solid #DFB86D;
+    border-radius: 4px;
+    color: #DC9632;
+    display: none;
+    height: 36px;
+    left: 0;
+    line-height: 18px;
+    padding: 5px 10px;
+    text-align: left;
+    top: 16px;
+    width: 180px;
+    z-index: 9;
+}
+.btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0 none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    height: 38px;
+    line-height: 38px;
+    outline: 0 none;
+    padding: 0;
+    text-align: center;
+    vertical-align: baseline;
+    width: 245px;
+}
+.btn-login {
+    background-position: 0 -208px;
+    box-shadow: 0 2px 5px rgba(0, 94, 21, 0.3);
+    color: #FFFFFF;
+}
+.btn-login:hover {
+    background-position: 0 -256px;
+}
+.btn-login:active {
+    background-position: 0 -304px;
+    color: #B1DAB9;
+}
+.btn-reg {
+    background-position: -117px -208px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #5C7A5C;
+    float: right;
+}
+.loginFormBtn .btn-reg-hover {
+    background-position: -117px -256px;
+    color: #279C3B;
+}
+.loginFormBtn .btn-reg-active {
+    background-position: -117px -304px;
+    color: #5C7A5C;
+}
+.btn-moblogin2 {
+    background-color: #FFFFFF;
+    background-position: -396px -288px;
+    float: none;
+    font-size: 14px;
+    height: 37px;
+    margin-left: 25px;
+    margin-top: 30px;
+    text-align: center;
+    width: 202px;
+}
+.loginFormConf {
+    clear: both;
+    color: #848585;
+    height: 12px;
+    line-height: 14px;
+    margin-left: 25px;
+    margin-top: 12px;
+    position: relative;
+    width: 245px;
+    z-index: 1;
+}
+.loginFormVer {
+    float: left;
+    width: 160px;
+}
+.loginFormService {
+    float: right;
+    text-align: right;
+}
+.loginFormVerList {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #B7C2C9;
+    display: none;
+    left: 33px;
+    padding: 1px;
+    position: absolute;
+    top: -5px;
+    width: 140px;
+}
+.loginFormVerList li a {
+    color: #848585;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    text-indent: 22px;
+    width: 140px;
+}
+.loginFormVerList li a:hover {
+    background-color: #EFF5EB;
+}
+.loginFormVerList li a.verSelected {
+    background-position: -250px -58px;
+    background-repeat: no-repeat;
+    color: #5AA869;
+}
+
+#prevTheme {
+    background-position: 0 -457px;
+}
+#prevTheme:hover {
+    background-position: 0 -492px;
+}
+#nextTheme {
+    background-position: -35px -457px;
+    margin-right: 0;
+}
+#nextTheme:hover {
+    background-position: -35px -492px;
+}
+#scoreIndex {
+    background-position: -70px -457px;
+    color: #FFFFFF;
+    display: none;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin: 1px 10px 0 0;
+    text-align: center;
+    width: 73px;
+}
+#scoreIndex:hover {
+    background-position: -70px -492px;
+}
+#scoreIndexPop {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+    height: 229px;
+    left: 50%;
+    margin-left: -231px;
+    margin-top: -115px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    width: 462px;
+    z-index: 999;
+}
+#scoreIndexPopIfm {
+    height: 229px;
+    width: 462px;
+}
+#theme {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    transition: all 0.5s ease 0s;
+}
+#theme.themeEffect {
+    background: none repeat scroll 0 0 #E7EBE9;
+}
+#musicLink, #musicLink:hover, #prevTheme, #prevTheme:hover, #nextTheme, #nextTheme:hover, #scoreIndex, #scoreIndex:hover {
+}
+.error-hd, .error-mid, .error-ft, .error-arrow, .error-tt p {
+    background-image: url("../../images/login/error_bg.png");
+}
+#errorAlert {
+    display: none;
+    left: 40%;
+    margin-left: -500px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 347px;
+    z-index: 1000;
+}
+#errorAlert.errorAlert-show {
+    animation: 0.6s ease-in-out 0.3s normal none 1 shake;
+    display: block;
+}
+#errorAlert .error-hd, #errorAlert .error-ft {
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+#errorAlert .error-hd {
+    background-position: -10px 0;
+    background-repeat: no-repeat;
+    height: 8px;
+}
+#errorAlert .error-ft {
+    background-position: -10px -8px;
+    background-repeat: no-repeat;
+    height: 10px;
+}
+#errorAlert .error-mid {
+    background-position: -357px 0;
+    background-repeat: repeat-y;
+    padding: 5px 20px 7px;
+}
+#errorAlert .error-arrow {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 19px;
+    position: absolute;
+    right: -6px;
+    top: 35px;
+    width: 10px;
+}
+#errorAlert .error-tt p {
+    background-position: -704px center;
+    background-repeat: no-repeat;
+    color: #434343;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 10px 20px 8px 60px;
+}
+#errorAlert .error-detail {
+    border-top: 1px solid #E1E1E1;
+    color: #7D7D7D;
+    line-height: 18px;
+    margin-top: 2px;
+    padding: 8px 18px 5px;
+}
+#errorAlert .error-detail a {
+    color: #4E90E2;
+    text-decoration: underline;
+}
+@-moz-keyframes shake {
+0% {
+    margin-left: -505px;
+}
+25% {
+    margin-left: -502px;
+}
+50% {
+    margin-left: -505px;
+}
+75% {
+    margin-left: -502px;
+}
+100% {
+    margin-left: -505px;
+}
+}
+@-moz-keyframes shake {
+0% {
+    margin-left: -505px;
+}
+25% {
+    margin-left: -502px;
+}
+50% {
+    margin-left: -505px;
+}
+75% {
+    margin-left: -502px;
+}
+100% {
+    margin-left: -505px;
+}
+}
+#errorMask {
+    background: none repeat scroll 0 0 #000000;
+    height: 600px;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+ @media screen and (min-height: 768px){.top{margin-top:80px;} .login {top:27%;}}
+ @media screen and (min-height: 1050px){.top{margin-top:320px;} .login {top:40%;}}

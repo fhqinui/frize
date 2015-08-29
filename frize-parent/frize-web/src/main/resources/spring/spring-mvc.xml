@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc
+	      http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+		  http://www.springframework.org/schema/beans 
+		  http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		  http://www.springframework.org/schema/context 
+		  http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		  http://www.springframework.org/schema/aop
+		  http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		  "
+       default-lazy-init="false">
+    <!-- 扫描指定的包中的类上的注解 -->
+    <context:component-scan base-package="com.fhqinui.frize.web" />
+    <aop:aspectj-autoproxy proxy-target-class="false" />
+    
+    <!-- <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+	   <property name="messageConverters">
+	       <list>
+	           <ref bean="jsonConverter" />
+	       </list>
+	   </property>
+	</bean>
+
+	<bean id="jsonConverter" 
+	            class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+	   <property name="supportedMediaTypes" value="application/json" />
+	</bean> -->
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+	   <property name="prefix" value="/WEB-INF/pages/"/>  
+	   <property name="suffix" value=".jsp"></property>  
+	</bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+<!--     	<property name="maxUploadSize" value="900000"/> -->
+    	<property name="maxUploadSize" value="204800000"/>
+    	
+<!--     	<property name="maxInMemorySize" value="10240" /> -->
+	</bean>
+	
+	
+      <mvc:interceptors>  
+	    <!-- 认证拦截器 -->
+        <mvc:interceptor>  
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/login/*"/>
+            <mvc:exclude-mapping path="/login/pwd/reset/page.do"/>
+            <mvc:exclude-mapping path="/login/page.do"/>  
+            <mvc:exclude-mapping path="/login/authentication.do"/>  
+            <mvc:exclude-mapping path="/login/logout.do"/>
+            <mvc:exclude-mapping path="/operator/pwd/update.do"/>      
+            <bean class="com.fhqinui.frize.web.interceptor.AuthenticationInterceptor"></bean>  
+        </mvc:interceptor>  
+        
+        <!-- 权限验证拦截器 -->
+        <mvc:interceptor>  
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/login/*"/>
+            <bean class="com.fhqinui.frize.web.interceptor.PermissionInterceptor"></bean>  
+        </mvc:interceptor>
+    </mvc:interceptors> 
+
+    <mvc:annotation-driven>
+        <!-- handle chinese charset problem 处理中文字符集的问题! -->
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <constructor-arg index="0" value="UTF-8"/><!-- 只能设置text/plain的编码 -->
+                <property name="writeAcceptCharset" value="false"/>
+                <!-- <property name="supportedMediaTypes">    
+	                <list>    
+	                    <value>text/plain;charset=UTF-8</value>    
+	                    <value>text/html;charset=UTF-8</value>    
+	                </list>    
+                </property>   -->  
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+</beans>
